@@ -1,15 +1,14 @@
 {
-  "name": "maze-proxy-server",
+  "name": "sidecountry-proxy-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "updateServiceOne": "cd productDetails && git checkout && git pull",
     "updateServiceTwo": "cd QnA && git checkout && git pull",
-    "updateServiceThree": "cd related-products && git checkout && git pull",
     "updateServiceFour": "cd reviewsService && git checkout && git pull",
-    "updateAll": "npm run updateServiceOne && npm run updateServiceTwo && npm run updateServiceThree && npm run updateServiceFour",
-    "start": "concurrently --kill-others-on-fail \"nodemon\" \"cd productDetails && npm start\" \"cd QnA && npm start\" \"cd related-products && npm start\" \"cd reviewsService && npm start\""
+    "updateAll": "npm run updateServiceOne && npm run updateServiceTwo && npm run updateServiceFour",
+    "start": "concurrently --kill-others-on-fail \"nodemon\" \"cd productDetails && npm start\" \"cd QnA && npm start\" \"cd reviewsService && npm start\""
   },
   "keywords": [],
   "author": "",
