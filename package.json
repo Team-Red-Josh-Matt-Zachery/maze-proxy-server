@@ -6,8 +6,8 @@
   "scripts": {
     "updateServiceOne": "cd productDetails && git checkout && git pull",
     "updateServiceTwo": "cd QnA && git checkout && git pull",
-    "updateServiceFour": "cd reviewsService && git checkout && git pull",
-    "updateAll": "npm run updateServiceOne && npm run updateServiceTwo && npm run updateServiceFour",
+    "updateServiceThree": "cd reviewsService && git checkout && git pull",
+    "updateAll": "npm run updateServiceOne && npm run updateServiceTwo && npm run updateServiceThree",
     "start": "concurrently --kill-others-on-fail \"nodemon\" \"cd productDetails && npm start\" \"cd QnA && npm start\" \"cd reviewsService && npm start\""
   },
   "keywords": [],
